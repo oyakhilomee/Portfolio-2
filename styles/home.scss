@@ -1,0 +1,67 @@
+// Variables
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+// Header style
+
+.content-wrap {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  //   justify-content: space-around;
+}
+
+.brandimg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-li {
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+// Start of landing section
+
+#landing {
+  background-color: yellow;
+}
+
+.landing-container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
