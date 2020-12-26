@@ -1,5 +1,9 @@
-// Variables
+// Custom Variables
+$color-one: #ff4900;
+$color-two: #ffbf0d;
+$color-three: #cf7b07;
 
+// Global Variables
 *,
 html {
   padding: 0;
@@ -33,7 +37,7 @@ body {
 }
 
 .navbar {
-  background-color: red;
+  //   background-color: red;
   display: flex;
   justify-content: space-between;
   //   justify-content: space-around;
@@ -76,6 +80,7 @@ body {
     }
   }
   .landing-left {
+    margin-top: 1rem;
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column;
@@ -102,7 +107,7 @@ body {
   .download-cv {
     padding: 0.5rem 1.2rem;
     color: #fff;
-    background-color: #ff4900;
+    background-color: $color-one;
     border: none;
     border-radius: 0.3rem;
   }
@@ -112,5 +117,17 @@ body {
     background-color: transparent;
     border: 0.11rem solid #fff;
     border-radius: 0.3rem;
+  }
+}
+
+.down-arrow-div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+  }
+  .fa-arrow-alt-circle-down {
+    color: $color-one;
   }
 }
