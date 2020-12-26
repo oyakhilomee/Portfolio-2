@@ -19,6 +19,7 @@ li {
 body {
   background-color: #0a0a0a;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content-wrap {
@@ -43,12 +44,18 @@ body {
 }
 
 .nav-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .nav-li {
@@ -56,19 +63,92 @@ body {
   padding-top: 1rem;
 }
 
-#landing {
-  background-color: yellow;
-}
-
-.landing-container {
+#landing .landing-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  #landing .landing-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #landing .landing-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#landing .landing-name {
+  font-size: 1.9rem;
+  font-family: "Caveat", cursive;
+}
+
+@media screen and (min-width: 768px) {
+  #landing .landing-name {
+    font-size: 3rem;
+  }
+}
+
+#landing .description-text {
+  font-weight: 300;
+  margin-top: 0.7rem;
+}
+
+#landing .cta-btns {
+  margin-top: 1.5rem;
+}
+
+#landing .download-cv {
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  background-color: #ff4900;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+#landing .my-work {
+  padding: 0.4rem 1.2rem;
+  color: #fff;
+  background-color: transparent;
+  border: 0.11rem solid #fff;
+  border-radius: 0.3rem;
 }
 /*# sourceMappingURL=home.css.map */

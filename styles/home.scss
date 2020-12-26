@@ -21,6 +21,7 @@ li {
 body {
   background-color: #0a0a0a;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 // Header style
@@ -44,8 +45,11 @@ body {
 }
 
 .nav-ul {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .nav-li {
@@ -56,12 +60,57 @@ body {
 // Start of landing section
 
 #landing {
-  background-color: yellow;
-}
+  //   background-color: yellow;
 
-.landing-container {
-  display: flex;
+  .landing-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .landing-left {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .landing-name {
+    font-size: 1.9rem;
+    font-family: "Caveat", cursive;
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
 
-  justify-content: space-between;
-  align-items: center;
+  .description-text {
+    font-weight: 300;
+    margin-top: 0.7rem;
+  }
+  .cta-btns {
+    margin-top: 1.5rem;
+  }
+
+  .download-cv {
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    background-color: #ff4900;
+    border: none;
+    border-radius: 0.3rem;
+  }
+  .my-work {
+    padding: 0.4rem 1.2rem;
+    color: #fff;
+    background-color: transparent;
+    border: 0.11rem solid #fff;
+    border-radius: 0.3rem;
+  }
 }
